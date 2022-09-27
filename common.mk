@@ -18,7 +18,7 @@
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/motorola/sm7250-common/sm7250-common-vendor.mk)
