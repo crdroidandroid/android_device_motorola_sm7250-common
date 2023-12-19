@@ -26,6 +26,10 @@ persist.vendor.overlay.izat.optin=rro
 # Graphics
 debug.sf.enable_hwc_vds=1
 
+# LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=15
+
 # Media
 av.offload.enable=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
