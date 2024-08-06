@@ -1,0 +1,27 @@
+diff --git a/smali/org/codeaurora/ims/ImsConfigImpl.smali b/smali/org/codeaurora/ims/ImsConfigImpl.smali
+index 59d3986..f4b64bd 100644
+--- a/smali/org/codeaurora/ims/ImsConfigImpl.smali
++++ b/smali/org/codeaurora/ims/ImsConfigImpl.smali
+@@ -1472,22 +1472,8 @@
+     .param p1, "subid"    # I
+ 
+     .line 794
+-    iget-object v0, p0, Lorg/codeaurora/ims/ImsConfigImpl;->mContext:Landroid/content/Context;
+-
+-    const-string v1, "wfc_ims_mdn"
+-
+-    invoke-static {p1, v1, v0}, Landroid/telephony/SubscriptionManager;->getSubscriptionProperty(ILjava/lang/String;Landroid/content/Context;)Ljava/lang/String;
+-
+-    move-result-object v0
+-
+-    .line 796
+-    .local v0, "mdn":Ljava/lang/String;
+-    if-nez v0, :cond_0
+-
+     const-string v0, "0"
+ 
+-    .line 797
+-    :cond_0
+     return-object v0
+ .end method
+ 
