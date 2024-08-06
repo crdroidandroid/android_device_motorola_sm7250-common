@@ -64,6 +64,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+    # IMS Patches
+    system_ext/priv-app/ims/ims.apk)
+        apktool_patch "${2}" "$MY_DIR/ims-patches"
+            ;;
     # libgui shim
     system_ext/lib/lib-imsvideocodec.so | system_ext/lib64/lib-imsvideocodec.so)
         grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed libgui_shim.so "${2}"
