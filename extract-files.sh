@@ -64,6 +64,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+    vendor/lib64/libwvhidl.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+            ;;
     # libgui shim
     system_ext/lib/lib-imsvideocodec.so | system_ext/lib64/lib-imsvideocodec.so)
         grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed libgui_shim.so "${2}"
