@@ -288,7 +288,8 @@ PRODUCT_COPY_FILES += \
 # Moto hardware
 PRODUCT_PACKAGES += \
     MotoActions \
-    MotoCommonOverlay
+    MotoCommonOverlay \
+    MotoNrEnabler
 
 # Net
 PRODUCT_PACKAGES += \
