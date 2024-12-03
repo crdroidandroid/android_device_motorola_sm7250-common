@@ -77,6 +77,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Bootctrl
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
