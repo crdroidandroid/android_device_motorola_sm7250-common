@@ -71,6 +71,9 @@ PRODUCT_PACKAGES += \
     tune2fs_ramdisk \
     resize2fs_ramdisk
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
