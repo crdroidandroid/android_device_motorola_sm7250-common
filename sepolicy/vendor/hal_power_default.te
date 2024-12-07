@@ -1,10 +1,8 @@
 allow hal_power_default {
-  sysfs_msm_subsys
   vendor_sysfs_sensors
 }:dir search;
 
 allow hal_power_default {
-  sysfs_msm_subsys
   vendor_sysfs_sensors
 }:{
   file
