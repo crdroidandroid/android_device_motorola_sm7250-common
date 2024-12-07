@@ -11,6 +11,10 @@ genfscon sysfs /devices/virtual/input/input5/dt-gesture/enable                  
 genfscon sysfs /devices/virtual/input/input6/dt-gesture/enable                  u:object_r:vendor_sysfs_sensors:s0
 genfscon sysfs /devices/virtual/input/input7/dt-gesture/enable                  u:object_r:vendor_sysfs_sensors:s0
 
+# Sensors
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/panelName              u:object_r:vendor_sysfs_data:s0
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/panelRegDA             u:object_r:vendor_sysfs_data:s0
+
 # Graphics
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary               u:object_r:vendor_sysfs_graphics:s0
 
