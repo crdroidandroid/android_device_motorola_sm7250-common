@@ -7,7 +7,7 @@ vendor.rmnet_vnd.rps_mask  u:object_r:vendor_usb_prop:s0
 # Motorola
 ro.boot.adb_early          u:object_r:moto_boot_prop:s0
 ro.boot.secure_hardware    u:object_r:moto_boot_prop:s0
-ro.boot.radio              u:object_r:moto_boot_prop:s0
+ro.boot.radio.             u:object_r:moto_boot_prop:s0
 ro.boot.device             u:object_r:moto_boot_prop:s0
 ro.boot.dualsim            u:object_r:moto_boot_prop:s0
 ro.boot.hardware.sku       u:object_r:moto_boot_prop:s0
