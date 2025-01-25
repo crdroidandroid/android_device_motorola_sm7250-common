@@ -370,7 +370,6 @@ vendor/lib/libC2D2.so|c1916f2adb917f3567b872670496994456472586
 vendor/lib/libCB.so|817667e1754ece87093625a779025c120bf2da06
 vendor/lib/libOpenCL.so|be3067845af3b7d49ce2fcdd99625e4cd8276f09
 vendor/lib/libVkLayer_q3dtools.so|369b6d88056571e0dc36c0290737b2b4ff2d3417
-vendor/lib/libadreno_app_profiles.so|aa2b17bd0f68f61f022a109c057c876430ec9b53
 vendor/lib/libadreno_utils.so|069864d4b01d97375035aa3d91fff49e88f05937
 vendor/lib/libc2d30_bltlib.so|90766895641fbda817bb2818a0538cb66be62d8b
 vendor/lib/libgpudataproducer.so|a273e0c21fc2e5c6e6bf5e021fbb766fc80c6af3
@@ -387,7 +386,6 @@ vendor/lib64/libC2D2.so|2f5bb4e82006bcc854aa468126bd3fffab339f67
 vendor/lib64/libCB.so|063c94959b0748da37900414e0270f3dc08a7ca6
 vendor/lib64/libOpenCL.so|ce96cb481976251b309fed436c28935bad5f3e64
 vendor/lib64/libVkLayer_q3dtools.so|3c12691b731e629077059b1e3ef52d731696ecae
-vendor/lib64/libadreno_app_profiles.so|2fe5c7b44adbeb18f4365c43a588024df21da847
 vendor/lib64/libadreno_utils.so|be384cb99c00829ef61027f41f5a8fab386aa9d5
 vendor/lib64/libc2d30_bltlib.so|6dfc4b3393a83113a91e2a3d8c2e4e58a62636dc
 vendor/lib64/libgpudataproducer.so|fa4da138eff952bbec042dc1b4ad0bad0d97f7ef
@@ -549,14 +547,6 @@ vendor/bin/motobox;SYMLINK=vendor/bin/expat
 
 # Perf
 vendor/bin/msm_irqbalance
-
-# Perf - QSMP
-vendor/bin/vendor.qti.qspmhal@1.0-service
-vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
-vendor/etc/seccomp_policy/qspm.policy
-vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
-vendor/lib/vendor.qti.qspmhal@1.0.so
-vendor/lib64/vendor.qti.qspmhal@1.0.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
