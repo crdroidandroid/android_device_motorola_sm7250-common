@@ -889,13 +889,11 @@ vendor/lib64/libscveObjectSegmentation_stub.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
-# Thermal
-vendor/bin/thermal-engine
-vendor/etc/thermal-engine.conf
-vendor/etc/init/init_thermal-engine.rc
-vendor/lib/libthermalclient.so
-vendor/lib64/libsystempioctl.so
-vendor/lib64/libthermalclient.so
+# Thermal - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/thermal-engine|9fd7e19e3cc0dfa7f58def0bde11eb482ec69201
+vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/lib64/libthermalclient.so|26475ef0d6b80fcf40c9490f795d21e46d3d9054
 
 # Time services
 vendor/app/TimeService/TimeService.apk
