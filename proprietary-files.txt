@@ -304,11 +304,10 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=-vendor
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=-vendor
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|6e6249eb7df66b3941cc21d213fabde557daf76e
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|14819df15693c737fb2a51bf89fe826200286006
 
 # GPS
 vendor/app/CACertService/CACertService.apk
@@ -402,14 +401,15 @@ vendor/firmware/a630_sqe.fw
 vendor/firmware/a650_gmu.bin
 vendor/firmware/a650_sqe.fw
 
-# Keystore
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
+# Keystore - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|0e0aa56f9ad9b1832eeb39db82eed1f021d7e244
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|9816f37e7487295e29a19d05c4a3e6b7b0ec35ea
+vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service-default-qti.xml|478d11fc12dd7c6a85b543cf163bec217aea3148
+vendor/lib64/libkeymasterdeviceutils.so|15af23f261554c47b5f490f0fe68c15abe87cda8
+vendor/lib64/libkeymasterprovision.so|6d774511459d24cc7f814546296537a77d35c454
+vendor/lib64/libkeymasterutils.so|2392abef423c0610d9625670f1ff3063532e9bc1
+vendor/lib64/libqcbor.so|7da5294a577f5a71ede5b3804a026bf69bd025ee
+vendor/lib64/libqtikeymaster4.so|cb423cacf556d81b73542c15392a075ee2ab4def
 
 # Latency
 system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
@@ -641,7 +641,6 @@ vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqmimotext.so
-vendor/lib64/libqcbor.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libqmi_csvt_srvc.so
