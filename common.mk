@@ -298,9 +298,8 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    NfcNci \
-    Tag \
-    SecureElement
+    Tag
+
 ifneq (,$(filter %kiev, $(TARGET_PRODUCT)))
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
