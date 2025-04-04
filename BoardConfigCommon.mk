@@ -104,6 +104,7 @@ TARGET_BOARD_PLATFORM := lito
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 # Audio
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_AUDIOSPHERE := true
@@ -183,6 +184,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Properties
 TARGET_PRODUCT_PROP += $(VENDOR_PATH)/product.prop
+TARGET_ODM_PROP += $(VENDOR_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
 TARGET_SYSTEM_EXT_PROP += $(VENDOR_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
@@ -200,7 +202,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/private
-BOARD_VENDOR_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += \
+   $(VENDOR_PATH)/sepolicy/vendor \
+   $(VENDOR_PATH)/sepolicy/dolby
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true

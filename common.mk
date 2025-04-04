@@ -153,7 +153,8 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libvolumelistener \
     tinymix \
-    libtinycompress
+    libtinycompress \
+    MotoDolby
 
 PRODUCT_PACKAGES += \
     liba2dpoffload
