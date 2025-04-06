@@ -191,6 +191,7 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.crda.sh \
     init.mdm.sh \
+    init.mmi.charge_only.rc \
     init.mmi.chipset.rc \
     init.mmi.rc \
     init.mmi.touch.sh \
